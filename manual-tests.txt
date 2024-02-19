@@ -61,4 +61,14 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 4: Filter non-numeric inputs
+
+## Test steps
+1. Build and run CiCo
+2. Enter random non-numeric characters >10
+3. Enter 1234567890
+
+## Expected results
+* System should 'beep' for any attempted non-integer inputs and not place them in the text field
+* System should allow numeric entries as normal
 
