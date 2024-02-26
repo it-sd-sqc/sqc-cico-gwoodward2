@@ -80,5 +80,5 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 3. Click the 'Finish' button
 
 ## Expected results
-* Should display "Checked IN" after step 2
+* Status panel should appear after step 2
 * Main panel should display after step 3
