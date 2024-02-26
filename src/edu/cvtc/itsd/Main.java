@@ -290,7 +290,14 @@ public class Main {
     panelStatus.add(labelState);
 
     panelStatus.add(Box.createVerticalGlue());
-
+    // Module 5 ticket: Add finish button
+    JButton finishButton = new JButton("Finish");
+    finishButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    finishButton.setForeground(Color.BLACK);
+    finishButton.setBackground(Color.lightGray);
+    finishButton.addActionListener(e -> Main.doneProcessing());
+    panelStatus.add(finishButton);
+    panelStatus.add(Box.createVerticalGlue());
     // Error panel ////////////////////////////////////////////////////////////
     JPanel panelError = new JPanel();
     panelError.setLayout(new BoxLayout(panelError, BoxLayout.PAGE_AXIS));
@@ -329,6 +336,8 @@ public class Main {
     labelMeta.setPreferredSize(new Dimension(640, 32));
     labelMeta.setMaximumSize(new Dimension(640, 32));
     frame.getContentPane().add(labelMeta, BorderLayout.PAGE_END);
+
+
 
     // Connect to DB //////////////////////////////////////////////////////////
     try {
