@@ -69,7 +69,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 3. Enter 1234567890
 
 ## Expected results
-* System should 'beep' for any attempted non-integer inputs and not place them in the text field
+* System should 'beep' for any attempted non-integer inputs. They should not be seen in the text field.
 * System should allow numeric entries as normal
 
 # Module 5: Button to end timeout
